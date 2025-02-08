@@ -1,0 +1,28 @@
+# Dataset configuration
+resize_images: true
+image_width: 640
+image_height: 640
+
+# Training configuration
+batch_size: 16
+epochs: 100
+learning_rate: 0.001
+
+# Augmentation
+augmentation:
+  hsv_h: 0.015  # HSV-Hue augmentation
+  hsv_s: 0.7    # HSV-Saturation augmentation
+  hsv_v: 0.4    # HSV-Value augmentation
+  degrees: 0    # rotation (+/- deg)
+  translate: 0.1  # translation (+/- fraction)
+  scale: 0.5    # scale (+/- gain)
+  shear: 0.0    # shear (+/- deg)
+  perspective: 0.0  # perspective (+/- fraction), range 0-0.001
+  flipud: 0.0   # probability of flip up-down
+  fliplr: 0.5   # probability of flip left-right
+
+# Classes
+classes:
+  - player
+  - ball
+  - referee 

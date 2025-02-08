@@ -1,0 +1,28 @@
+# Model Configuration
+model:
+  yolo_model_path: "yolov8n.pt"
+  confidence_threshold: 0.5
+  device: "cpu"  # or "cuda" if you have GPU
+
+# Image Configuration
+image:
+  min_resolution: [720, 1280]
+  max_resolution: [1080, 1920]
+  supported_formats: [".jpg", ".jpeg", ".png"]
+
+# OCR Configuration
+ocr:
+  languages: ["en"]
+  number_min_confidence: 0.7
+  number_max_length: 2
+
+# Field Configuration
+field:
+  width_meters: 105.0
+  height_meters: 68.0
+  penalty_area_width: 40.32
+  penalty_area_height: 16.5
+
+# System Configuration
+max_players: 22
+debug_mode: false 
